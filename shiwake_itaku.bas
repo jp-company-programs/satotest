@@ -1,10 +1,10 @@
 
-//0521ãƒ†ã‚¹ãƒˆ2å›ç›®ã®å†…å®¹
+'0521_1‰ñ–Ú‚ÌƒeƒXƒg“à—e
 
 Attribute VB_Name = "shiwake_itaku"
 Option Explicit
 
-Sub ï¿½dï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i_ï¿½Ï‘ï¿½()
+Sub d•ª‚¯‹L“üˆóü_‚©‚ñ‚½‚ñŒŸ•i_ˆÏ‘õ()
 
 Application.ScreenUpdating = False
 
@@ -14,20 +14,20 @@ imanobook = ActiveWorkbook.Name
 Dim imanosheet As String
 imanosheet = ActiveSheet.Name
 
-Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Activate
+Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Activate
     Range("A1:F20").ClearContents
-Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Activate
+Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Activate
 
  Dim Sh As Worksheet
-Set Sh = Worksheets("ï¿½Vï¿½[ï¿½ï¿½")
+Set Sh = Worksheets("ƒV[ƒ‹")
 Dim sh2 As Worksheet
-Set sh2 = Worksheets("ï¿½Vï¿½[ï¿½ï¿½ï¿½Ôï¿½")
+Set sh2 = Worksheets("ƒV[ƒ‹”Ô†")
 
 Dim orgPrinter As String
 
 
 'Dim s_handan As Integer
-'If Workbooks(imanobook).Worksheets("ï¿½İ’ï¿½").Cells(11, 1) = "ï¿½ï¿½Ô•\ï¿½ï¿½ï¿½oï¿½ï¿½" Then
+'If Workbooks(imanobook).Worksheets("İ’è").Cells(11, 1) = "’è”Ô•\‚ğo‚·" Then
 's_handan = 1
 'End If
 'Dim teiban_handan As Integer
@@ -130,23 +130,23 @@ Dim sheetmei_free As String
 Dim sheetmei_bag As String
 
 
-For siwake_user = 1 To Workbooks("ï¿½dï¿½ï¿½ï¿½ï¿½ï¿½p_ï¿½Vï¿½[ï¿½ï¿½ï¿½oï¿½ï¿½_ï¿½Ï‘ï¿½ï¿½p").Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(11, 1000).End(xlToLeft).Column
+For siwake_user = 1 To Workbooks("d•ª‚¯—p_ƒV[ƒ‹o‚µ_ˆÏ‘õ—p").Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(11, 1000).End(xlToLeft).Column
 
-Select Case Workbooks("ï¿½dï¿½ï¿½ï¿½ï¿½ï¿½p_ï¿½Vï¿½[ï¿½ï¿½ï¿½oï¿½ï¿½_ï¿½Ï‘ï¿½ï¿½p").Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(1, siwake_user)
+Select Case Workbooks("d•ª‚¯—p_ƒV[ƒ‹o‚µ_ˆÏ‘õ—p").Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(1, siwake_user)
 
-    Case "ï¿½ï¿½ï¿½[ï¿½Uï¿½[ID"
+    Case "ƒ†[ƒU[ID"
     useridR = siwake_user
     
     End Select
 
 Next siwake_user
     
-'ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½pï¿½Aï¿½Ú‹qï¿½ï¿½ï¿½Vï¿½[ï¿½g
-For syouhin_itaku = 1 To Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p").Worksheets("ï¿½Ú‹qï¿½ï¿½ï¿½").Cells(11, 1000).End(xlToLeft).Column
+'¤•iˆê——ebay_ˆÏ‘õ—pAŒÚ‹qî•ñƒV[ƒg
+For syouhin_itaku = 1 To Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p").Worksheets("ŒÚ‹qî•ñ").Cells(11, 1000).End(xlToLeft).Column
 
-Select Case Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p").Worksheets("ï¿½Ú‹qï¿½ï¿½ï¿½").Cells(1, syouhin_itaku)
+Select Case Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p").Worksheets("ŒÚ‹qî•ñ").Cells(1, syouhin_itaku)
 
-    Case "ï¿½@ï¿½lorï¿½Âl"
+    Case "–@lorŒÂl"
     houzin_kozinR = syouhin_itaku
 
 End Select
@@ -163,44 +163,44 @@ Next syouhin_itaku
     
   On Error Resume Next
   
-  If Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p") Is Nothing Then
-MsgBox "ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½pï¿½@ï¿½ï¿½ï¿½Jï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½I"
+  If Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p") Is Nothing Then
+MsgBox "¤•iˆê——ebay_ˆÏ‘õ—p@‚ğŠJ‚¢‚Ä‚­‚¾‚³‚¢I"
 GoTo L1
 End If
  
-    If Len(Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(2, 1)) = 0 Then
-MsgBox "ï¿½ï¿½ï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½I"
+    If Len(Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(2, 1)) = 0 Then
+MsgBox "‹àŠz‚ª‚ ‚è‚Ü‚¹‚ñI"
 GoTo L1
 End If
 
-    If Len(Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(12, 1)) = 0 Then
-MsgBox "ï¿½ï¿½ï¿½[ï¿½Uï¿½[IDï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½I"
+    If Len(Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(12, 1)) = 0 Then
+MsgBox "ƒ†[ƒU[ID‚ğæ“¾‚µ‚Ä‚­‚¾‚³‚¢I"
 GoTo L1
 End If
         
-    forudaNO = forudaNOï¿½Â‚ï¿½ï¿½ï¿½(computamei)
+    forudaNO = forudaNO‚Â‚¯‚é(computamei)
     jougen = forudaNO + 49999
     
-'    Path = "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½oï¿½bï¿½Oï¿½ÅV" & forudaNO & "\"
+'    Path = "D:\JP Dropbox\o•i‘Oƒf[ƒ^\ƒoƒbƒOÅV" & forudaNO & "\"
 '    buf = Dir(Path & "*")
 '    Do While buf <> ""
 
-    Path = "D:\JP Dropbox\ï¿½dï¿½ï¿½\ï¿½Xï¿½^ï¿½bï¿½t_ï¿½ï¿½ï¿½D\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½" & forudaNO & "\"
+    Path = "D:\JP Dropbox\d–\ƒXƒ^ƒbƒt_D\ƒeƒXƒgƒV[ƒ‹" & forudaNO & "\"
     buf = Dir(Path & "*")
     Do While buf <> ""
         
     bango = Replace(buf, ".csv", "")
 
-    'ï¿½gï¿½pï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½tï¿½Ôï¿½ï¿½Ü‚Å‚ï¿½ï¿½pï¿½Xï¿½ï¿½CSVï¿½Éoï¿½ï¿½
-    'ï¿½eï¿½Xï¿½gï¿½Ì‚ï¿½ï¿½ßCï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½v
-'    Path = "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½oï¿½bï¿½Oï¿½ÅV" & forudaNO & "\"
-'    Path = "C:\Users\jp_bu\Desktop\ï¿½eï¿½Xï¿½g\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½" & forudaNO & "\"
+    'g—p‚µ‚Ä‚¢‚éó•t”Ô†‚Ü‚Å‚ğƒpƒX‚ÌCSV‚Éo—Í
+    'ƒeƒXƒg‚Ì‚½‚ßC³‚ª•K—v
+'    Path = "D:\JP Dropbox\o•i‘Oƒf[ƒ^\ƒoƒbƒOÅV" & forudaNO & "\"
+'    Path = "C:\Users\jp_bu\Desktop\ƒeƒXƒg\ƒeƒXƒgƒV[ƒ‹" & forudaNO & "\"
 '    buf = Dir(Path & "*")
         
         If bango < jougen Then
         shouhinbango_full = bango + 1
         Else
-        MsgBox ("ï¿½tï¿½Hï¿½ï¿½ï¿½_ï¿½Ìï¿½ï¿½ï¿½É’Bï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½ï¿½Ìƒtï¿½Hï¿½ï¿½ï¿½_ï¿½Å‚ï¿½è’¼ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B")
+        MsgBox ("ƒtƒHƒ‹ƒ_‚ÌãŒÀ‚É’B‚µ‚Ü‚µ‚½B‘¼‚ÌƒtƒHƒ‹ƒ_‚Å‚â‚è’¼‚µ‚Ä‚­‚¾‚³‚¢B")
         GoTo L1
         End If
         
@@ -212,13 +212,13 @@ End If
        duplicate = shouhinbango_duplicate_check(shouhinbango_full)
        
        If duplicate = 1 Then
-       keikoku = MsgBox(shouhinbango_full & Chr(13) & Chr(13) & "ï¿½ï¿½ï¿½iï¿½Ôï¿½ï¿½Ìdï¿½ï¿½ï¿½Ì‰Â”\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½B" & Chr(13) & Chr(13) & "everythingï¿½ï¿½" & shouhinbango_full & "ï¿½ï¿½ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" & Chr(13) & _
-         "ï¿½ï¿½ï¿½É“ï¿½ï¿½ï¿½ï¿½Ôï¿½ï¿½ï¿½ï¿½oï¿½^ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½dï¿½ï¿½ï¿½Å‚ï¿½ï¿½B" & Chr(13) & Chr(13) & "ï¿½lï¿½bï¿½gï¿½Â‹ï¿½ï¿½ï¿½ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½ÄŠÇ—ï¿½ï¿½Ò‚É•ñ‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B", vbCritical)
+       keikoku = MsgBox(shouhinbango_full & Chr(13) & Chr(13) & "¤•i”Ô†‚Ìd•¡‚Ì‰Â”\«‚ª‚‚¢‚Å‚·B" & Chr(13) & Chr(13) & "everything‚Å" & shouhinbango_full & "‚ğƒ`ƒFƒbƒN‚µ‚Ä‚­‚¾‚³‚¢" & Chr(13) & _
+         "Šù‚É“¯‚¶”Ô†‚ª“o˜^‚³‚ê‚Ä‚¢‚½‚çd•¡‚Å‚·B" & Chr(13) & Chr(13) & "ƒlƒbƒgŠÂ‹«‚ğƒ`ƒFƒbƒN‚µ‚ÄŠÇ—Ò‚É•ñ‚µ‚Ä‚­‚¾‚³‚¢B", vbCritical)
          Worksheets(imanosheet).Activate
        Exit Sub
        End If
        
-       Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(19, 1) = shouhinbango_full
+       Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(19, 1) = shouhinbango_full
     
     If shouhinbango_full > 999999 Then
     shouhinbango_kakutei = shouhinbango_full
@@ -226,8 +226,8 @@ End If
     shouhinbango_kakutei = "0" & shouhinbango_full
     End If
     
-    'ï¿½ï¿½ï¿½z
-    kingaku = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(2, 1)
+    '‹àŠz
+    kingaku = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(2, 1)
 
     If kingaku = 0 Then
     kingaku_kakutei = "00000000"
@@ -248,7 +248,7 @@ End If
     ElseIf kingaku > 9999999 And kingaku < 100000000 Then
     kingaku_kakutei = kingaku
     Else
-    MsgBox ("ï¿½dï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½I")
+    MsgBox ("d“ü‹àŠz‚ª‚¨‚©‚µ‚¢‚©‚àI")
     End If
     
             
@@ -256,8 +256,8 @@ End If
     kingaku_kakutei = "00000000"
     End If
     
-    'ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½pï¿½Åæ“¾ï¿½ï¿½ï¿½ï¿½(ï¿½@ï¿½lorï¿½Âl)
-    For i = 1 To Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p").workshhets("ï¿½Ú‹qï¿½ï¿½ï¿½").Cells(Rows.Count, 1).End(xlUp).Row
+    '¤•iˆê——ebay_ˆÏ‘õ—p‚Åæ“¾‚·‚é(–@lorŒÂl)
+    For i = 1 To Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p").workshhets("ŒÚ‹qî•ñ").Cells(Rows.Count, 1).End(xlUp).Row
         
     
     
@@ -267,112 +267,112 @@ End If
 
 
 
-        'ï¿½ï¿½ï¿½ï¿½1
-        memo1 = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(8, 1)
+        'ƒƒ‚1
+        memo1 = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(8, 1)
 
-        'ï¿½ï¿½ï¿½ï¿½2
-        memo2 = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(9, 1)
+        'ƒƒ‚2
+        memo2 = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(9, 1)
 
-        'ï¿½ï¿½ï¿½[ï¿½Uï¿½[ID
-        user_id = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(12, 1)
+        'ƒ†[ƒU[ID
+        user_id = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(12, 1)
 
-        'ï¿½ï¿½ï¿½iï¿½Ôï¿½
-'        shouhinbango_full = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(19, 1)
+        '¤•i”Ô†
+'        shouhinbango_full = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(19, 1)
 
     
     
-        Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½ï¿½Ôï¿½").Cells(1, 1) = shouhinbango_full
+        Workbooks(imanobook).Worksheets("ƒV[ƒ‹”Ô†").Cells(1, 1) = shouhinbango_full
     Call sh2.PrintOut(ActivePrinter:="Brother QL-800")
     
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½ï¿½Ôï¿½").Select
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹”Ô†").Select
     Range("A1:F20").ClearContents
     
     
-'---ï¿½Vï¿½[ï¿½ï¿½
-    '1ï¿½sï¿½Ú‹ï¿½
-    'ï¿½ï¿½ï¿½iï¿½Ôï¿½
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(2, 1) = shouhinbango_full
-    'ï¿½oï¿½[ï¿½Rï¿½[ï¿½h
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(3, 1) = "*" & shouhinbango_full & "*"
-    'ï¿½ï¿½ï¿½z
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(4, 1) = kingaku & "ï¿½~"
-    'ï¿½ï¿½ï¿½[ï¿½Uï¿½[ID
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(4, 2) = user_id
+'---ƒV[ƒ‹
+    '1s–Ú‹ó”’
+    '¤•i”Ô†
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(2, 1) = shouhinbango_full
+    'ƒo[ƒR[ƒh
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(3, 1) = "*" & shouhinbango_full & "*"
+    '‹àŠz
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(4, 1) = kingaku & "‰~"
+    'ƒ†[ƒU[ID
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(4, 2) = user_id
     
     
-    'ï¿½ï¿½Ğ–ï¿½
-    If Len(Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(12, 1)) <> 0 Then
-        target_kaisya = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(12, 1)
+    '‰ïĞ–¼
+    If Len(Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(12, 1)) <> 0 Then
+        target_kaisya = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(12, 1)
         
-        For i = 2 To Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p").Worksheets("ï¿½Ú‹qï¿½ï¿½ï¿½").Cells(Rows.Count, 1).End(xlUp).Row
-            If Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p").Worksheets("ï¿½Ú‹qï¿½ï¿½ï¿½").Cells(i, 1) = target_kaisya Then
-                kaisya_name = Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p").Worksheets("ï¿½Ú‹qï¿½ï¿½ï¿½").Cells(i, 2)
+        For i = 2 To Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p").Worksheets("ŒÚ‹qî•ñ").Cells(Rows.Count, 1).End(xlUp).Row
+            If Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p").Worksheets("ŒÚ‹qî•ñ").Cells(i, 1) = target_kaisya Then
+                kaisya_name = Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p").Worksheets("ŒÚ‹qî•ñ").Cells(i, 2)
                 Exit For
             End If
         Next i
         
     
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(4, 3) = kaisya_name
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(4, 3) = kaisya_name
     
     End If
     
     
-    'ï¿½ï¿½ï¿½ï¿½1
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(6, 1) = memo1
-    'ï¿½ï¿½ï¿½ï¿½2
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(7, 1) = memo2
+    'ƒƒ‚1
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(6, 1) = memo1
+    'ƒƒ‚2
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(7, 1) = memo2
     
     
     
     Call Sh.PrintOut(ActivePrinter:="Brother QL-800")
     
     
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Select
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Select
     Range("A2:F20").ClearContents
 '
-'         Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½ï¿½Ôï¿½").Cells(1, 1) = shouhinbango_full
+'         Workbooks(imanobook).Worksheets("ƒV[ƒ‹”Ô†").Cells(1, 1) = shouhinbango_full
 '    Call Sh2.PrintOut(ActivePrinter:="Brother QL-800")
 '
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½ï¿½Ôï¿½").Select
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹”Ô†").Select
 '    Range("A1:F20").ClearContents
         
              
-    'ï¿½eï¿½Xï¿½gï¿½p
+    'ƒeƒXƒg—p
 '    Workbooks(imanobook).Sheets("csv").Select
 '    Sheets("csv").Copy
-'    ChDir "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½ï¿½ï¿½iï¿½ê——ï¿½oï¿½^ï¿½p"
-'    ActiveWorkbook.SaveAs Filename:="D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½ï¿½ï¿½iï¿½ê——ï¿½oï¿½^ï¿½p\" & namae & ".csv", FileFormat:=xlCSV, _
+'    ChDir "D:\JP Dropbox\o•i‘Oƒf[ƒ^\¤•iˆê——“o˜^—p"
+'    ActiveWorkbook.SaveAs Filename:="D:\JP Dropbox\o•i‘Oƒf[ƒ^\¤•iˆê——“o˜^—p\" & namae & ".csv", FileFormat:=xlCSV, _
 '        CreateBackup:=False
 '
 '    Workbooks(namae).Close False
 
     Workbooks(imanobook).Sheets("csv").Select
     Sheets("csv").Copy
-    ChDir "D:\JP Dropbox\ï¿½dï¿½ï¿½\ï¿½Xï¿½^ï¿½bï¿½t_ï¿½ï¿½ï¿½D\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½\ï¿½ï¿½ï¿½iï¿½ê——ï¿½oï¿½^ï¿½pï¿½eï¿½Xï¿½g"
-    ActiveWorkbook.SaveAs Filename:="D:\JP Dropbox\ï¿½dï¿½ï¿½\ï¿½Xï¿½^ï¿½bï¿½t_ï¿½ï¿½ï¿½D\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½\ï¿½ï¿½ï¿½iï¿½ê——ï¿½oï¿½^ï¿½pï¿½eï¿½Xï¿½g\" & namae & ".csv", FileFormat:=xlCSV, _
+    ChDir "D:\JP Dropbox\d–\ƒXƒ^ƒbƒt_D\ƒeƒXƒgƒV[ƒ‹\¤•iˆê——“o˜^—pƒeƒXƒg"
+    ActiveWorkbook.SaveAs Filename:="D:\JP Dropbox\d–\ƒXƒ^ƒbƒt_D\ƒeƒXƒgƒV[ƒ‹\¤•iˆê——“o˜^—pƒeƒXƒg\" & namae & ".csv", FileFormat:=xlCSV, _
         CreateBackup:=False
 
     Workbooks(namae).Close False
     
     
-    Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Activate
+    Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Activate
     Range("A2:A10").ClearContents
     Range("A12").ClearContents
     
-    'ï¿½eï¿½Xï¿½gï¿½p
-'    Name "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½oï¿½bï¿½Oï¿½ÅV" & forudaNO & "\" & bango & ".csv" As "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½oï¿½bï¿½Oï¿½ÅV" & forudaNO & "\" & bango + 1 & ".csv"
-    Name "D:\JP Dropbox\ï¿½dï¿½ï¿½\ï¿½Xï¿½^ï¿½bï¿½t_ï¿½ï¿½ï¿½D\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½" & forudaNO & "\" & bango & ".csv" As "D:\JP Dropbox\ï¿½dï¿½ï¿½\ï¿½Xï¿½^ï¿½bï¿½t_ï¿½ï¿½ï¿½D\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½" & forudaNO & "\" & bango + 1 & ".csv"
+    'ƒeƒXƒg—p
+'    Name "D:\JP Dropbox\o•i‘Oƒf[ƒ^\ƒoƒbƒOÅV" & forudaNO & "\" & bango & ".csv" As "D:\JP Dropbox\o•i‘Oƒf[ƒ^\ƒoƒbƒOÅV" & forudaNO & "\" & bango + 1 & ".csv"
+    Name "D:\JP Dropbox\d–\ƒXƒ^ƒbƒt_D\ƒeƒXƒgƒV[ƒ‹" & forudaNO & "\" & bango & ".csv" As "D:\JP Dropbox\d–\ƒXƒ^ƒbƒt_D\ƒeƒXƒgƒV[ƒ‹" & forudaNO & "\" & bango + 1 & ".csv"
         
         
-    Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Activate
-    Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(1, 1).Select
+    Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Activate
+    Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(1, 1).Select
     
     
 
 
-    'ï¿½Aï¿½ï¿½ï¿½tï¿½Hï¿½ï¿½ï¿½_ï¿½Éƒfï¿½[ï¿½^ï¿½ï¿½ï¿½Aï¿½Eï¿½gï¿½ï¿½ï¿½ï¿½
+    '˜A‘±ƒtƒHƒ‹ƒ_‚Éƒf[ƒ^‚ğƒAƒEƒg‚·‚é
     
-    fairumei = Replace(Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p").Name, ".xlsx", "")
+    fairumei = Replace(Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p").Name, ".xlsx", "")
     
     If shouhinbango_full > 999999 Then
         keta = Left(shouhinbango_full, 1) * 100
@@ -382,35 +382,35 @@ End If
         shouhinbango = shouhinbango_full
         End If
         
-        sheetmei_free = "Nï¿½tï¿½ï¿½ï¿½[" & keta
-        sheetmei_bag = "ï¿½oï¿½bï¿½O" & keta
+        sheetmei_free = "NƒtƒŠ[" & keta
+        sheetmei_bag = "ƒoƒbƒO" & keta
 
     sheetmei_syurui = Left(sheetmei_free, Len(sheetmei_free) - 3)
     
-    fairumei2 = nen & tsuki & hi & ji & fun & byou & "_itakuID_" & "ï¿½dï¿½ï¿½ï¿½ï¿½ï¿½Vï¿½[ï¿½ï¿½ï¿½fï¿½[ï¿½^"
-    'ï¿½eï¿½Xï¿½gï¿½pï¿½Ì‚ï¿½ï¿½ßCï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½v
-'    Workbooks.Add.SaveAs Filename:="D:\JP Dropbox\ï¿½Aï¿½Eï¿½gï¿½Cï¿½ï¿½\ï¿½Aï¿½ï¿½\" & fairumei2 & ".xlsx"
-    Workbooks.Add.SaveAs Filename:="C:\Users\jp_bu\Desktop\ï¿½eï¿½Xï¿½g\ï¿½eï¿½Xï¿½g\" & fairumei2 & ".xlsx"
+    fairumei2 = nen & tsuki & hi & ji & fun & byou & "_itakuID_" & "d•ª‚¯ƒV[ƒ‹ƒf[ƒ^"
+    'ƒeƒXƒg—p‚Ì‚½‚ßC³‚ª•K—v
+'    Workbooks.Add.SaveAs Filename:="D:\JP Dropbox\ƒAƒEƒgƒCƒ“\˜A‘±\" & fairumei2 & ".xlsx"
+    Workbooks.Add.SaveAs Filename:="C:\Users\jp_bu\Desktop\ƒeƒXƒg\ƒeƒXƒg\" & fairumei2 & ".xlsx"
 
-    Workbooks(fairumei2).Worksheets("Sheet1").Cells(1, 1) = shouhinbango_full 'ï¿½ï¿½ï¿½iï¿½Ôï¿½
-    Workbooks(fairumei2).Worksheets("Sheet1").Cells(1, 2) = sheetmei_free 'ï¿½Vï¿½[ï¿½gï¿½ï¿½
-    Workbooks(fairumei2).Worksheets("Sheet1").Cells(1, 3) = shouhinbango  'ï¿½sï¿½ï¿½
-    Workbooks(fairumei2).Worksheets("Sheet1").Cells(1, 4) = sheetmei_syurui 'ï¿½ï¿½ï¿½
-    Workbooks(fairumei2).Worksheets("Sheet1").Cells(1, 5) = user_id 'ï¿½ï¿½ï¿½[ï¿½Uï¿½[ID
+    Workbooks(fairumei2).Worksheets("Sheet1").Cells(1, 1) = shouhinbango_full '¤•i”Ô†
+    Workbooks(fairumei2).Worksheets("Sheet1").Cells(1, 2) = sheetmei_free 'ƒV[ƒg–¼
+    Workbooks(fairumei2).Worksheets("Sheet1").Cells(1, 3) = shouhinbango  's”
+    Workbooks(fairumei2).Worksheets("Sheet1").Cells(1, 4) = sheetmei_syurui 'í—Ş
+    Workbooks(fairumei2).Worksheets("Sheet1").Cells(1, 5) = user_id 'ƒ†[ƒU[ID
     
     Workbooks(fairumei2).Close True
     
     
-    MsgBox "ï¿½fï¿½[ï¿½^ï¿½ï¿½ï¿½Aï¿½Eï¿½gï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B"
+    MsgBox "ƒf[ƒ^‚ğƒAƒEƒg‚µ‚Ü‚µ‚½B"
 
 
     
-    'ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½Z
+    '©“®ŒvZ
     Application.ScreenUpdating = True
     
 L1:
 
-Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Activate
+Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Activate
     
     
     
@@ -419,7 +419,7 @@ End Sub
 
 
 
-Sub ï¿½dï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½i_ï¿½Ï‘ï¿½ï¿½p()
+Sub d•ª‚¯‹L“üˆóü_˜A‘±ŒŸ•i_ˆÏ‘õ—p()
 
 
     Application.ScreenUpdating = False
@@ -432,9 +432,9 @@ Dim imanosheet As String
 imanosheet = ActiveSheet.Name
 
 Dim Sh As Worksheet
-Set Sh = Worksheets("ï¿½Vï¿½[ï¿½ï¿½")
+Set Sh = Worksheets("ƒV[ƒ‹")
 Dim sh2 As Worksheet
-Set sh2 = Worksheets("ï¿½Vï¿½[ï¿½ï¿½ï¿½Ôï¿½")
+Set sh2 = Worksheets("ƒV[ƒ‹”Ô†")
 
 Dim orgPrinter As String
     
@@ -489,13 +489,13 @@ Dim target_kaisya As String
 Dim kaisya_name As String
 
     
-'    If Len(Workbooks(imanobook).Worksheets("ï¿½İ’ï¿½").Cells(12, 1)) <> 0 Then
-'    uchizei = 1 ''''ï¿½ï¿½ï¿½Åƒtï¿½ï¿½ï¿½O
+'    If Len(Workbooks(imanobook).Worksheets("İ’è").Cells(12, 1)) <> 0 Then
+'    uchizei = 1 ''''“àÅƒtƒ‰ƒO
 '    End If
     
     
-    shori_handan = InputBox("ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½z" & Chr(10) & Chr(10) & WorksheetFunction.Sum(Range("A26:A100")) * 100 & "ï¿½~" _
-    & Chr(10) & Chr(10) & "1  ï¿½Vï¿½[ï¿½ï¿½ï¿½oï¿½ï¿½" & Chr(10) & "2  ï¿½Vï¿½[ï¿½ï¿½ï¿½oï¿½ï¿½(ï¿½Ôï¿½ï¿½Vï¿½[ï¿½ï¿½ï¿½È‚ï¿½ï¿½j" & Chr(10) & "3  ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß‚ï¿½", Default:=1)
+    shori_handan = InputBox("‡Œv‹àŠz" & Chr(10) & Chr(10) & WorksheetFunction.Sum(Range("A26:A100")) * 100 & "‰~" _
+    & Chr(10) & Chr(10) & "1  ƒV[ƒ‹o‚·" & Chr(10) & "2  ƒV[ƒ‹o‚·(”Ô†ƒV[ƒ‹‚È‚µj" & Chr(10) & "3  ‡Œv‹àŠzŒ©‚½‚©‚ç–ß‚é", Default:=1)
     
 '    If shori_handan = 3 Then
 '    GoTo L1
@@ -505,16 +505,16 @@ Dim kaisya_name As String
 '    GoTo L1
 '    End If
     
-    gyou = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(10000, 1).End(xlUp).Row
+    gyou = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(10000, 1).End(xlUp).Row
     
     If gyou > 100 Then
-    MsgBox ("ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½Bï¿½ï¿½è’¼ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B")
+    MsgBox ("s”‚ª‚¨‚©‚µ‚¢‚Å‚·B‚â‚è’¼‚µ‚Ä‚­‚¾‚³‚¢B")
         GoTo L1
     End If
     
-    For x = 26 To gyou ''''''''''ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@ï¿½@''''''''''''''''''ï¿½ï¿½Uï¿½Sï¿½ï¿½ï¿½`ï¿½Fï¿½bï¿½N
-    If Len(Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(x, 1)) = 0 Then
-    MsgBox (x & "ï¿½@ï¿½sï¿½Ú‚É‹ï¿½ï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½B")
+    For x = 26 To gyou ''''''''''@@@@@@@@@@@@@@@''''''''''''''''''ˆê’U‘S•”ƒ`ƒFƒbƒN
+    If Len(Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(x, 1)) = 0 Then
+    MsgBox (x & "@s–Ú‚É‹àŠz‚ª“ü‚Á‚Ä‚¢‚Ü‚¹‚ñB")
     GoTo L1
     End If
     
@@ -529,23 +529,23 @@ Dim kaisya_name As String
         
     com2 = Left(computamei, 1) & Right(computamei, 1)
     
-    forudaNO = forudaNOï¿½Â‚ï¿½ï¿½ï¿½(computamei)
+    forudaNO = forudaNO‚Â‚¯‚é(computamei)
     jougen = forudaNO + 49999
     
     
 '    If shori_handan = 2 Then
-'    kingaku = InputBox("ï¿½ï¿½ï¿½zï¿½ÍHï¿½iï¿½ï¿½ï¿½ï¿½ï¿½Äj")
+'    kingaku = InputBox("‹àŠz‚ÍHi—ª‚µ‚Äj")
 '    kingaku = kingaku * 100
-'    maisuu = InputBox("ï¿½ï¿½ï¿½ï¿½ï¿½ÍH", Default:=2)
+'    maisuu = InputBox("–‡”‚ÍH", Default:=2)
 '    gyou = maisuu + 17
 '    End If
     
-     'ï¿½eï¿½Xï¿½gï¿½pï¿½Ì‚ï¿½ï¿½ßCï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½v
-'    Path = "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½oï¿½bï¿½Oï¿½ÅV" & forudaNO & "\"
+     'ƒeƒXƒg—p‚Ì‚½‚ßC³‚ª•K—v
+'    Path = "D:\JP Dropbox\o•i‘Oƒf[ƒ^\ƒoƒbƒOÅV" & forudaNO & "\"
 '    buf = Dir(Path & "*")
 '    Do While buf <> ""
     
-    Path = "D:\JP Dropbox\ï¿½dï¿½ï¿½\ï¿½Xï¿½^ï¿½bï¿½t_ï¿½ï¿½ï¿½D\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½" & forudaNO & "\"
+    Path = "D:\JP Dropbox\d–\ƒXƒ^ƒbƒt_D\ƒeƒXƒgƒV[ƒ‹" & forudaNO & "\"
     buf = Dir(Path & "*")
     Do While buf <> ""
         
@@ -553,7 +553,7 @@ Dim kaisya_name As String
         If bango < jougen Then
         shouhinbango_full = bango + 1
         Else
-        MsgBox ("ï¿½tï¿½Hï¿½ï¿½ï¿½_ï¿½Ìï¿½ï¿½ï¿½É’Bï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½ï¿½Ìƒtï¿½Hï¿½ï¿½ï¿½_ï¿½Å‚ï¿½è’¼ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B")
+        MsgBox ("ƒtƒHƒ‹ƒ_‚ÌãŒÀ‚É’B‚µ‚Ü‚µ‚½B‘¼‚ÌƒtƒHƒ‹ƒ_‚Å‚â‚è’¼‚µ‚Ä‚­‚¾‚³‚¢B")
         GoTo L1
         
         End If
@@ -576,21 +576,21 @@ Dim kaisya_name As String
        duplicate = shouhinbango_duplicate_check(shouhinbango_full)
        
        If duplicate = 1 Then
-       keikoku = MsgBox(shouhinbango_full & Chr(13) & Chr(13) & "ï¿½ï¿½ï¿½iï¿½Ôï¿½ï¿½Ìdï¿½ï¿½ï¿½Ì‰Â”\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½B" & Chr(13) & Chr(13) & "everythingï¿½ï¿½" & shouhinbango_full & "ï¿½ï¿½ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" & Chr(13) & _
-         "ï¿½ï¿½ï¿½É“ï¿½ï¿½ï¿½ï¿½Ôï¿½ï¿½ï¿½ï¿½oï¿½^ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½dï¿½ï¿½ï¿½Å‚ï¿½ï¿½B" & Chr(13) & Chr(13) & "ï¿½lï¿½bï¿½gï¿½Â‹ï¿½ï¿½ï¿½ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½ÄŠÇ—ï¿½ï¿½Ò‚É•ñ‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B", vbCritical)
+       keikoku = MsgBox(shouhinbango_full & Chr(13) & Chr(13) & "¤•i”Ô†‚Ìd•¡‚Ì‰Â”\«‚ª‚‚¢‚Å‚·B" & Chr(13) & Chr(13) & "everything‚Å" & shouhinbango_full & "‚ğƒ`ƒFƒbƒN‚µ‚Ä‚­‚¾‚³‚¢" & Chr(13) & _
+         "Šù‚É“¯‚¶”Ô†‚ª“o˜^‚³‚ê‚Ä‚¢‚½‚çd•¡‚Å‚·B" & Chr(13) & Chr(13) & "ƒlƒbƒgŠÂ‹«‚ğƒ`ƒFƒbƒN‚µ‚ÄŠÇ—Ò‚É•ñ‚µ‚Ä‚­‚¾‚³‚¢B", vbCritical)
        Exit Sub
        End If
         
         End If
             
-'    If Len(Workbooks(imanobook).Worksheets("ï¿½İ’ï¿½").Cells(8, 1)) <> 0 Then
-'    hitocode3 = Workbooks(imanobook).Worksheets("ï¿½İ’ï¿½").Cells(8, 1)
+'    If Len(Workbooks(imanobook).Worksheets("İ’è").Cells(8, 1)) <> 0 Then
+'    hitocode3 = Workbooks(imanobook).Worksheets("İ’è").Cells(8, 1)
 '    Else
-'    MsgBox "ï¿½oï¿½Cï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½B" & Chr(10) & "ï¿½ï¿½Uï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B"
+'    MsgBox "ƒoƒCƒ„[–¼‚ª“ü—Í‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB" & Chr(10) & "ˆê’UI—¹‚µ‚Ü‚·B"
 '    GoTo L1
 '    End If
 '
-'    buyerNO_kakutei = ï¿½oï¿½Cï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½hï¿½Â‚ï¿½ï¿½ï¿½2(imanobook, hitocode3)
+'    buyerNO_kakutei = ƒoƒCƒ„[ƒR[ƒh‚Â‚¯‚é2(imanobook, hitocode3)
 '    buyer_kakutei = hitocode3
     
     
@@ -598,20 +598,20 @@ Dim kaisya_name As String
 '    If uchizei = 1 Then
     
 '    If shori_houhou = 1 Then
-'    kingaku = Round((Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(x, 1) / shouhizei), 0)
-'    moto_kingaku = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(x, 1)
+'    kingaku = Round((Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(x, 1) / shouhizei), 0)
+'    moto_kingaku = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(x, 1)
 '    Else
-'    kingaku = Round(((Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(x, 1) * 100) / shouhizei), 0)
-'    moto_kingaku = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(x, 1) * 100
+'    kingaku = Round(((Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(x, 1) * 100) / shouhizei), 0)
+'    moto_kingaku = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(x, 1) * 100
 '    End If
 '
 '    Else
 '
 '    If shori_houhou = 1 Then
-'    kingaku = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(x, 1)
+'    kingaku = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(x, 1)
 '
 '    Else
-'    kingaku = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(x, 1) * 100
+'    kingaku = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(x, 1) * 100
 '    End If
 '
 '    End If
@@ -635,7 +635,7 @@ Dim kaisya_name As String
     ElseIf kingaku > 9999999 And kingaku < 100000000 Then
     kingaku_kakutei = kingaku
     Else
-    MsgBox ("ï¿½dï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")
+    MsgBox ("d“ü‹àŠz‚ª‚¨‚©‚µ‚¢‚©‚à")
     End If
     
             
@@ -646,15 +646,15 @@ Dim kaisya_name As String
     namae = shouhinbango_kakutei & "_" & kingaku_kakutei & com2 & "_" & computamei
     
 '    If Len(kingaku_kakutei) <> 8 Then
-'    MsgBox ("ï¿½dï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½Bï¿½ï¿½è’¼ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B")
+'    MsgBox ("d“ü‹àŠz‚ª‚¨‚©‚µ‚¢‚Å‚·B‚â‚è’¼‚µ‚Ä‚­‚¾‚³‚¢B")
 '    GoTo L1
 '    End If
 '
 '    teigaku_kakutei = "0000"
     
         
-'    If Len(Workbooks(imanobook).Worksheets("ï¿½İ’ï¿½").Cells(9, 1)) <> 0 Then
-'    ichiba = Workbooks(imanobook).Worksheets("ï¿½İ’ï¿½").Cells(9, 1)
+'    If Len(Workbooks(imanobook).Worksheets("İ’è").Cells(9, 1)) <> 0 Then
+'    ichiba = Workbooks(imanobook).Worksheets("İ’è").Cells(9, 1)
 '    Else
 '    ichiba = "xxx"
 '    End If
@@ -663,19 +663,19 @@ Dim kaisya_name As String
 '    ichiba = "xxx"
 '    End If
     
-'    If Len(Workbooks(imanobook).Worksheets("ï¿½İ’ï¿½").Cells(10, 1)) <> 0 Then
-'    hiduke = Workbooks(imanobook).Worksheets("ï¿½İ’ï¿½").Cells(10, 1)
+'    If Len(Workbooks(imanobook).Worksheets("İ’è").Cells(10, 1)) <> 0 Then
+'    hiduke = Workbooks(imanobook).Worksheets("İ’è").Cells(10, 1)
 '    Else
 '    hiduke = "19000101"
 '    End If
 '
-'    If Len(Workbooks(imanobook).Worksheets("ï¿½İ’ï¿½").Cells(10, 1)) <> 8 Then
+'    If Len(Workbooks(imanobook).Worksheets("İ’è").Cells(10, 1)) <> 8 Then
 '    hiduke = "19000101"
 '    End If
 '
 '    If Len(buyerNO_kakutei) = 0 Then
 '    buyerNO_kakutei = "J"
-'    MsgBox ("ï¿½oï¿½Cï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½BJï¿½É‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B")
+'    MsgBox ("ƒoƒCƒ„[ƒR[ƒh‚ª‚ ‚è‚Ü‚¹‚ñBJ‚É‚µ‚Ä‚¨‚«‚Ü‚·B")
 '    End If
          
     
@@ -685,84 +685,84 @@ Dim kaisya_name As String
 '    namae3 = shouhinbango_kakutei & buyer_kakutei & kingaku_kakutei
     
             
-'---ï¿½Vï¿½[ï¿½ï¿½
+'---ƒV[ƒ‹
 
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½ï¿½Ôï¿½").Cells(1, 1) = shouhinbango_full
-    '1ï¿½sï¿½Ú‹ï¿½
-    'ï¿½ï¿½ï¿½iï¿½Ôï¿½
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(2, 1) = shouhinbango_full
-    'ï¿½oï¿½[ï¿½Rï¿½[ï¿½h
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(3, 1) = "*" & shouhinbango_full & "*"
-    'ï¿½ï¿½ï¿½z
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(4, 1) = kingaku & "ï¿½~"
-    'ï¿½ï¿½ï¿½[ï¿½Uï¿½[ID
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(4, 2) = user_id
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹”Ô†").Cells(1, 1) = shouhinbango_full
+    '1s–Ú‹ó”’
+    '¤•i”Ô†
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(2, 1) = shouhinbango_full
+    'ƒo[ƒR[ƒh
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(3, 1) = "*" & shouhinbango_full & "*"
+    '‹àŠz
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(4, 1) = kingaku & "‰~"
+    'ƒ†[ƒU[ID
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(4, 2) = user_id
     
     
-    'ï¿½ï¿½Ğ–ï¿½
-    If Len(Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(12, 1)) <> 0 Then
-        target_kaisya = Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(12, 1)
+    '‰ïĞ–¼
+    If Len(Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(12, 1)) <> 0 Then
+        target_kaisya = Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(12, 1)
         
-        For i = 2 To Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p").Worksheets("ï¿½Ú‹qï¿½ï¿½ï¿½").Cells(Rows.Count, 1).End(xlUp).Row
-            If Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p").Worksheets("ï¿½Ú‹qï¿½ï¿½ï¿½").Cells(i, 1) = target_kaisya Then
-                kaisya_name = Workbooks("ï¿½ï¿½ï¿½iï¿½ê——ebay_ï¿½Ï‘ï¿½ï¿½p").Worksheets("ï¿½Ú‹qï¿½ï¿½ï¿½").Cells(i, 2)
+        For i = 2 To Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p").Worksheets("ŒÚ‹qî•ñ").Cells(Rows.Count, 1).End(xlUp).Row
+            If Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p").Worksheets("ŒÚ‹qî•ñ").Cells(i, 1) = target_kaisya Then
+                kaisya_name = Workbooks("¤•iˆê——ebay_ˆÏ‘õ—p").Worksheets("ŒÚ‹qî•ñ").Cells(i, 2)
                 Exit For
             End If
         Next i
         
     
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(4, 3) = kaisya_name
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(4, 3) = kaisya_name
     
     End If
     
     
-    'ï¿½ï¿½ï¿½ï¿½1
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(6, 1) = memo1
-    'ï¿½ï¿½ï¿½ï¿½2
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(7, 1) = memo2
+    'ƒƒ‚1
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(6, 1) = memo1
+    'ƒƒ‚2
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(7, 1) = memo2
 
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½ï¿½Ôï¿½").Cells(1, 1) = shouhinbango_full
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(2, 1) = shouhinbango_full
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(3, 1) = "*" & shouhinbango_full & "*"
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹”Ô†").Cells(1, 1) = shouhinbango_full
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(2, 1) = shouhinbango_full
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(3, 1) = "*" & shouhinbango_full & "*"
 '
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(4, 1) = kingaku & "ï¿½~"
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(4, 2) = teigaku
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(4, 3) = buyer_kakutei
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(4, 1) = kingaku & "‰~"
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(4, 2) = teigaku
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(4, 3) = buyer_kakutei
 '
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(5, 1) = hiduke 'ï¿½ï¿½ï¿½t
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(5, 1) = hiduke '“ú•t
 '    If uchizei = 1 Then
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(4, 1) = kingaku & "ï¿½~ (" & moto_kingaku & "ï¿½~)"
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(5, 3) = ichiba & "ï¿½ï¿½ï¿½Å”ï¿½ï¿½ï¿½" 'ï¿½sï¿½ï¿½
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(4, 1) = kingaku & "‰~ (" & moto_kingaku & "‰~)"
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(5, 3) = ichiba & "“àÅ”ƒ‚¢" 'sê
 '    Else
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(5, 3) = ichiba 'ï¿½sï¿½ï¿½
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(5, 3) = ichiba 'sê
 '    End If
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(6, 1) = lotno_kakutei
-'    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Cells(7, 1) = sonota
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(6, 1) = lotno_kakutei
+'    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Cells(7, 1) = sonota
     
     Call Sh.PrintOut(ActivePrinter:="Brother QL-800")
     
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½").Select
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹").Select
     Range("A1:F20").ClearContents
     
     If shori_handan = 1 Then
     Call sh2.PrintOut(ActivePrinter:="Brother QL-800")
     
-    Workbooks(imanobook).Worksheets("ï¿½Vï¿½[ï¿½ï¿½ï¿½Ôï¿½").Select
+    Workbooks(imanobook).Worksheets("ƒV[ƒ‹”Ô†").Select
     Range("A1:F20").ClearContents
     End If
     
     
-     'ï¿½eï¿½Xï¿½gï¿½pï¿½Ì‚ï¿½ï¿½ßCï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½v
+     'ƒeƒXƒg—p‚Ì‚½‚ßC³‚ª•K—v
 '    Workbooks(imanobook).Sheets("csv").Select
 '    Sheets("csv").Copy
-'    ChDir "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½ï¿½ï¿½iï¿½ê——ï¿½oï¿½^ï¿½p"
-'    ActiveWorkbook.SaveAs Filename:="D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½ï¿½ï¿½iï¿½ê——ï¿½oï¿½^ï¿½p\" & namae & ".csv", FileFormat:=xlCSV, _
+'    ChDir "D:\JP Dropbox\o•i‘Oƒf[ƒ^\¤•iˆê——“o˜^—p"
+'    ActiveWorkbook.SaveAs Filename:="D:\JP Dropbox\o•i‘Oƒf[ƒ^\¤•iˆê——“o˜^—p\" & namae & ".csv", FileFormat:=xlCSV, _
 '        CreateBackup:=False
 
     Workbooks(imanobook).Sheets("csv").Select
     Sheets("csv").Copy
-    ChDir "D:\JP Dropbox\ï¿½dï¿½ï¿½\ï¿½Xï¿½^ï¿½bï¿½t_ï¿½ï¿½ï¿½D\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½\ï¿½ï¿½ï¿½iï¿½ê——ï¿½oï¿½^ï¿½pï¿½eï¿½Xï¿½g"
-    ActiveWorkbook.SaveAs Filename:="D:\JP Dropbox\ï¿½dï¿½ï¿½\ï¿½Xï¿½^ï¿½bï¿½t_ï¿½ï¿½ï¿½D\ï¿½eï¿½Xï¿½g\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½\ï¿½ï¿½ï¿½iï¿½ê——ï¿½oï¿½^ï¿½pï¿½eï¿½Xï¿½g\" & namae & ".csv", FileFormat:=xlCSV, _
+    ChDir "D:\JP Dropbox\d–\ƒXƒ^ƒbƒt_D\ƒeƒXƒgƒV[ƒ‹\¤•iˆê——“o˜^—pƒeƒXƒg"
+    ActiveWorkbook.SaveAs Filename:="D:\JP Dropbox\d–\ƒXƒ^ƒbƒt_D\ƒeƒXƒg\ƒeƒXƒgƒV[ƒ‹\¤•iˆê——“o˜^—pƒeƒXƒg\" & namae & ".csv", FileFormat:=xlCSV, _
         CreateBackup:=False
 
             
@@ -773,30 +773,30 @@ Dim kaisya_name As String
     
     Next x
     
-    'ï¿½eï¿½Xï¿½gï¿½p
-'    Name "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½oï¿½bï¿½Oï¿½ÅV" & forudaNO & "\" & bango & ".csv" As "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½oï¿½bï¿½Oï¿½ÅV" & forudaNO & "\" & bango + cont & ".csv"
-     Name "D:\JP Dropbox\ï¿½dï¿½ï¿½\ï¿½Xï¿½^ï¿½bï¿½t_ï¿½ï¿½ï¿½D\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½" & forudaNO & "\" & bango & ".csv" As "D:\JP Dropbox\ï¿½dï¿½ï¿½\ï¿½Xï¿½^ï¿½bï¿½t_ï¿½ï¿½ï¿½D\ï¿½eï¿½Xï¿½gï¿½Vï¿½[ï¿½ï¿½" & forudaNO & "\" & bango + 1 & ".csv"
+    'ƒeƒXƒg—p
+'    Name "D:\JP Dropbox\o•i‘Oƒf[ƒ^\ƒoƒbƒOÅV" & forudaNO & "\" & bango & ".csv" As "D:\JP Dropbox\o•i‘Oƒf[ƒ^\ƒoƒbƒOÅV" & forudaNO & "\" & bango + cont & ".csv"
+     Name "D:\JP Dropbox\d–\ƒXƒ^ƒbƒt_D\ƒeƒXƒgƒV[ƒ‹" & forudaNO & "\" & bango & ".csv" As "D:\JP Dropbox\d–\ƒXƒ^ƒbƒt_D\ƒeƒXƒgƒV[ƒ‹" & forudaNO & "\" & bango + 1 & ".csv"
 
     
     
-    clear_handan = InputBox("1  ï¿½Nï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½" & Chr(10) & "2  ï¿½Nï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½È‚ï¿½", Default:=1)
+    clear_handan = InputBox("1  ƒNƒŠƒA‚·‚é" & Chr(10) & "2  ƒNƒŠƒA‚µ‚È‚¢", Default:=1)
     
     If clear_handan = 1 Then
-    Call ï¿½Nï¿½ï¿½ï¿½Aï¿½dï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i
+    Call ƒNƒŠƒAd•ª‚¯_‚©‚ñ‚½‚ñŒŸ•i
     End If
             
-    Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Activate
-    Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Cells(1, 1).Select
+    Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Activate
+    Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Cells(1, 1).Select
     
 
-  'ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½Z
+  '©“®ŒvZ
 Application.ScreenUpdating = True
 
 
     
 L1:
 
-Workbooks(imanobook).Worksheets("ï¿½ï¿½ï¿½ñ‚½‚ñŒŸ•i").Activate
+Workbooks(imanobook).Worksheets("‚©‚ñ‚½‚ñŒŸ•i").Activate
     
     
     
@@ -826,11 +826,11 @@ shouhinbango_full = shouhinbango_kakutei_suuji
     
     If flag <> 1 Then
     
-    If Workbooks(imanobook).Worksheets("ï¿½İ’ï¿½").Cells(30, 1) = shouhinbango_full Then
+    If Workbooks(imanobook).Worksheets("İ’è").Cells(30, 1) = shouhinbango_full Then
     flag = 1
     End If
           
-    Path = "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½ï¿½ï¿½iï¿½ê——ï¿½oï¿½^ï¿½p_ï¿½Ï‚ï¿½\"
+    Path = "D:\JP Dropbox\o•i‘Oƒf[ƒ^\¤•iˆê——“o˜^—p_Ï‚İ\"
     buf = Dir(Path & "*")
     
     Do While buf <> ""
@@ -850,7 +850,7 @@ shouhinbango_full = shouhinbango_kakutei_suuji
     End If
     
     If flag <> 1 Then
-    Path = "D:\JP Dropbox\ï¿½oï¿½iï¿½Oï¿½fï¿½[ï¿½^\ï¿½ï¿½ï¿½iï¿½ê——ï¿½oï¿½^ï¿½p\"
+    Path = "D:\JP Dropbox\o•i‘Oƒf[ƒ^\¤•iˆê——“o˜^—p\"
     buf = Dir(Path & "*")
     
     Do While buf <> ""
