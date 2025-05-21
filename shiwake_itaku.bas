@@ -1,5 +1,5 @@
 
-//0521テスト1回目の内容
+//0521テスト2回目の内容
 
 Attribute VB_Name = "shiwake_itaku"
 Option Explicit
